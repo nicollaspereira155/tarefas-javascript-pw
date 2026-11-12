@@ -1,0 +1,68 @@
+/* Root */
+:root {
+
+/* cores */
+    --cor-principal: #6D28D9;
+    --cor-secundaria: #C4B5FD;
+    --cor-secao: #FAF7FF;
+    --cor-texto: #303030;
+    --cor-preto: #0c0c0c;
+
+/* fontes */
+    --titulo: 'Oswald', serif;
+    --subtitulo: 'DM Sans', sans-serif;
+    --texto: 'DM Sans', sans-serif;
+    --especial: 'Redaction 10', sans-serif;
+}
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--texto);
+    background-color: var(--cor-secao);
+    color: var(--cor-texto);
+    font-size: 20px;
+    font-weight: 500;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    gap: 50px;
+}
+
+a {
+    text-decoration: none;
+    transition: .2s ease-in-out;
+    color: var(--cor-preto);
+}
+.ativo {
+    border-bottom: 2px solid var(--cor-preto);
+}
+
+.titulo {
+    font-family: var(--especial);
+    font-size: 40px;
+}
+
+/* NavBar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+    height: 70px;
+}
+/**/
+/**/
+/**/
+/**/

@@ -45,13 +45,28 @@ a {
     transition: .2s ease-in-out;
     color: var(--cor-preto);
 }
+
 .ativo {
     border-bottom: 2px solid var(--cor-preto);
 }
 
-.titulo {
+.subtitulo {
     font-family: var(--especial);
     font-size: 40px;
+}   
+
+.titulo {
+    font-family: var(--titulo);
+    font-size: 40px;
+    font-weight: 450;
+    text-align: center;
+}
+
+.titulo span {
+    color: var(--cor-principal);
+    font-size: 50px;
+    font-weight: 700;
+    font-family: var(--especial);
 }
 
 /* NavBar */

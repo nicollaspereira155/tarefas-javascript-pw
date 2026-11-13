@@ -7,6 +7,7 @@
     --cor-secao: #FAF7FF;
     --cor-texto: #303030;
     --cor-preto: #0c0c0c;
+    --cor-principal-rgba: rgba(109, 40, 217, 0.5);
 
 /* fontes */
     --titulo: 'Oswald', serif;
@@ -31,7 +32,7 @@ body {
     background-color: var(--cor-secao);
     color: var(--cor-texto);
     font-size: 20px;
-    font-weight: 500;
+    font-weight: 600;
 }
 
 ul {
@@ -40,10 +41,18 @@ ul {
     gap: 50px;
 }
 
+li {
+    transition: .2s ease-in-out;
+}
+
 a {
     text-decoration: none;
     transition: .2s ease-in-out;
     color: var(--cor-preto);
+}
+
+a:hover {
+    transform: translateY(-3px);
 }
 
 .ativo {
@@ -76,8 +85,97 @@ nav {
     align-items: center;
     padding: 20px 10%;
     height: 70px;
+    background-color: var(--cor-principal-rgba);
+    backdrop-filter: blur(10px);
+    position: fixed;
+    width: 100%;
 }
-/**/
-/**/
-/**/
+
+li:hover {
+    transform: translateY(-1px);
+}
+
+/* Seção Hero */    
+#hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10%;
+    height: 100vh;
+}
+
+#hero .titulo span {
+    font-family: var(--especial);
+}
+
+.btn-principal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+}
+
+.btn-principal a {
+    background-color: var(--cor-principal);
+    color: var(--cor-secao);
+    padding: 15px 25px;
+    border-radius: 10px;
+    transition: .2s ease-in-out;
+}
+
+/* Seção Exercícios */
+#exercicios {
+    padding: 0 10%;
+    margin-bottom: 100px;
+}
+
+#exercicios h2 {
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+#exercicios .exercicios {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.exercicio {
+    width: 600px;
+    height: 350px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+    border-radius: 24px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.exercicio h5 {
+    margin-top: 20px;
+}
+
+.exercicio p {
+    margin-top: 20px;
+    margin-inline: 10px;
+    height: 120px;
+}
+
+.exercicio .btn-principal {
+    margin-top: 40px;
+}
+
+/* Footer */
+footer {
+    background-color: var(--cor-principal);
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer p {
+    color: var(--cor-secao);
+}
 /**/

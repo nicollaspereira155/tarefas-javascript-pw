@@ -1,0 +1,208 @@
+/* Root */
+:root {
+
+/* cores */
+    --cor-principal: #6D28D9;
+    --cor-secundaria: #C4B5FD;
+    --cor-secao: #FAF7FF;
+    --cor-texto: #303030;
+    --cor-preto: #0c0c0c;
+    --cor-principal-rgba: rgba(109, 40, 217, 0.5);
+
+/* fontes */
+    --titulo: 'Oswald', serif;
+    --subtitulo: 'DM Sans', sans-serif;
+    --texto: 'DM Sans', sans-serif;
+    --especial: 'Redaction 10', sans-serif;
+}
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--texto);
+    background-color: var(--cor-secao);
+    color: var(--cor-texto);
+    font-size: 20px;
+    font-weight: 600;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    gap: 50px;
+}
+
+li {
+    transition: .2s ease-in-out;
+}
+
+a {
+    text-decoration: none;
+    transition: .2s ease-in-out;
+    color: var(--cor-preto);
+}
+
+a:hover {
+    transform: translateY(-3px);
+}
+
+.subtitulo {
+    font-family: var(--especial);
+    font-size: 40px;
+}   
+
+.titulo {
+    font-family: var(--titulo);
+    font-size: 55px;
+    font-weight: 450;
+    text-align: center;
+    padding-top: 8rem;
+    padding-bottom: 2rem;
+}
+
+/* NavBar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+    height: 70px;
+    background-color: var(--cor-principal-rgba);
+    backdrop-filter: blur(10px);
+    position: fixed;
+    width: 100%;
+}
+
+nav .btn-principal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 6px;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+nav .btn-principal a {
+    background-color: var(--cor-secao);
+    color: var(--cor-preto);
+    padding: 15px 25px;
+    border-radius: 10px;
+    transition: .2s ease-in-out;
+}
+
+/* Conteúdo */
+.container {
+    padding-inline: 15%;
+}
+
+.container p {
+    font-size: 25px;
+}
+
+.exercicio-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2rem;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+    border-radius: 24px;
+    width: 500px;
+    padding: 24px;
+    margin-bottom: 3rem;
+}
+
+.visor {
+    height: 70px;
+    border: 1px solid gray;
+    border-radius: 12px;
+    margin-bottom: 24px;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+}
+
+.campos {
+    display: flex;
+    flex-direction: column;
+}
+.campo {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 24px;
+}
+
+input {
+    height: 50px;
+    padding: 20px;
+    border-radius: 12px;
+    font-size: 20px;
+    border: 1px solid var(--cor-preto);
+}
+
+input:focus {
+    border-color: var(--cor-secundaria);
+}
+
+.mensagem-erro-nome {
+    margin-top: 5px;
+    font-size: 13px;
+    color: red;
+}
+.mensagem-erro-idade {
+    margin-top: 5px;
+    font-size: 13px;
+    color: red;
+}
+.mensagem-erro-primeiro {
+    margin-top: 5px;
+    font-size: 13px;
+    color: red;
+}
+.mensagem-erro-segundo {
+    margin-top: 5px;
+    font-size: 13px;
+    color: red;
+}
+
+#enviar {
+    background-color: var(--cor-principal);
+    color: var(--cor-secao);
+    padding: 15px 25px;
+    border-radius: 10px;
+    transition: .2s ease-in-out;
+    border: none;
+    font-size: 20px;
+}
+
+#enviar:hover {
+    transform: translateY(-3px);
+}
+
+/* Footer */
+footer {
+    background-color: var(--cor-principal);
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer p {
+    color: var(--cor-secao);
+}
+
